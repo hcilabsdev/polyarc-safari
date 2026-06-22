@@ -80,6 +80,15 @@ Answer App Privacy as:
 Everything is collected, **not** linked to identity, **not** used for tracking. That is the
 honest and accurate mapping — keep it that way.
 
+> **Do NOT declare email / Contact Info.** The website privacy policy mentions a Premium
+> *waitlist email*, but the **shipped Safari extension collects no email** (no waitlist UI in
+> `content.js`/`popup`). Apple's label must reflect the **binary**, not the website — declaring
+> email would be a mismatch. Only Usage Data + the random User ID apply.
+
+**Privacy Policy & Terms — already LIVE** (required before submission):
+- https://polyarc.ai/privacy/ — accurate to the code, HCI Labs LLC, updated 2026-06-16 ✅
+- https://polyarc.ai/terms/ — HCI Labs LLC (Georgia), governs the extension ✅
+
 ---
 
 ## 3. Build, sign (LLC org), and submit
