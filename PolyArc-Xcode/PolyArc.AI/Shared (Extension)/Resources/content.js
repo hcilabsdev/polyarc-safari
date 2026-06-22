@@ -86,7 +86,7 @@ async function fetchCard() {
     const r = await fetch(`${base}/card/${encodeURIComponent(id.value)}.json`);
     return await r.json();
   } catch (e) {
-    return { _error: "Couldn't reach PolyArc (" + base + ")." };
+    return { _error: "Couldn't reach PolyArc.AI (" + base + ")." };
   }
 }
 
@@ -113,7 +113,7 @@ function flagLink(flagText) {
 // low-price EV number, a leverage artifact). GRAY/NO DATA = not analyzed yet.
 function gradeMeta(data) {
   const NA = (headline, factors) => ({ label: "NO DATA", cls: "pt-s-na", headline, factors });
-  if (data && data._error) return NA("Couldn't reach PolyArc.", [esc(data._error)]);
+  if (data && data._error) return NA("Couldn't reach PolyArc.AI.", [esc(data._error)]);
   if (!data || data.coverage === false)
     return NA("Not analyzed yet.", [esc((data && data.message) || "No data for this market — we won't guess.")]);
   if (!data.market || !data.safebet || !data.polytruth)
@@ -168,7 +168,7 @@ function render(data) {
     <div class="pt-top">
       <span class="pt-chip ${gm.cls}">${esc(gm.label)}</span>
       <div class="pt-brandwrap">
-        <div class="pt-brand">PolyArc<span class="pt-x" id="pt-x">×</span><span class="pt-min-btn" id="pt-min-btn">–</span></div>
+        <div class="pt-brand">PolyArc.AI<span class="pt-x" id="pt-x">×</span><span class="pt-min-btn" id="pt-min-btn">–</span></div>
         <div class="pt-headline">${esc(gm.headline)}</div>
       </div>
     </div>
@@ -201,7 +201,7 @@ async function tick() {
       if (data && data.coverage) logEvent("view", curSlug, data.market && data.market.yes);
     }
   } catch (e) {
-    console.warn("[PolyArc] tick error:", e);
+    console.warn("[PolyArc.AI] tick error:", e);
   }
 }
 

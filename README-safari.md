@@ -1,6 +1,8 @@
-# PolyArc — Safari Web Extension port
+# PolyArc.AI — Safari Web Extension port
 
-A faithful Safari port of the [PolyArc Chrome extension](https://github.com/hcilabsdev/polyarc).
+A faithful Safari port of the [PolyArc.AI Chrome extension](https://github.com/hcilabsdev/polyarc).
+(The user-facing name is **PolyArc.AI** — distinct from the unrelated game studio Polyarc.
+The `polyarc.ai` backend domain and `ai.polyarc.safari` bundle id are unchanged.)
 Same honest decision-support card on Polymarket pages — facts, not advice.
 
 ## What changed from the Chrome version
@@ -42,9 +44,9 @@ extension (Safari on iOS/iPadOS supports Web Extensions since iOS 15).
 ```
 
 ### macOS
-1. Run the built **PolyArc.app** once (under `build/Build/Products/Debug/`) — launching
+1. Run the built **PolyArc.AI.app** once (under `build/Build/Products/Debug/`) — launching
    it registers the extension with Safari.
-2. **Safari → Settings → Extensions → PolyArc** → enable it.
+2. **Safari → Settings → Extensions → PolyArc.AI** → enable it.
 3. For an unsigned/dev build: **Safari → Settings → Advanced → "Show features for web
    developers"**, then **Develop → Allow Unsigned Extensions** (resets each Safari launch).
 4. Open any market on `polymarket.com` — the card appears bottom-right, same as Chrome.
@@ -52,20 +54,20 @@ extension (Safari on iOS/iPadOS supports Web Extensions since iOS 15).
 ### iOS / iPadOS
 1. `./build.sh ios` builds for the Simulator (no signing). Install the resulting
    `.app` in a booted Simulator, or just open the project in Xcode, pick the
-   **PolyArc (iOS)** scheme + a Simulator, and Run.
-2. In the Simulator: **Settings → Apps → Safari → Extensions → PolyArc** → enable, and
+   **PolyArc.AI (iOS)** scheme + a Simulator, and Run.
+2. In the Simulator: **Settings → Apps → Safari → Extensions → PolyArc.AI** → enable, and
    grant access to `polymarket.com`.
 3. Open `polymarket.com` in mobile Safari — same card.
 4. **Physical device:** requires signing with your Apple ID Team — open the project in
    Xcode, select your Team under Signing & Capabilities, and Run to the device.
 
-> Prefer the GUI? Skip `build.sh` and open `PolyArc-Xcode/PolyArc/PolyArc.xcodeproj`
-> in Xcode, pick the **PolyArc (macOS)** scheme, set your Team under Signing &
+> Prefer the GUI? Skip `build.sh` and open `PolyArc-Xcode/PolyArc.AI/PolyArc.AI.xcodeproj`
+> in Xcode, pick the **PolyArc.AI (macOS)** scheme, set your Team under Signing &
 > Capabilities, and press Run.
 
 ## Backend / privacy
 
-Identical to upstream: the card is fetched from the PolyArc backend (`https://polyarc.ai`
+Identical to upstream: the card is fetched from the PolyArc.AI backend (`https://polyarc.ai`
 by default; override in the popup). The only data sent is the anonymized `logEvent`
 payload defined in `content.js`. No identity, no wallet, no bets. See upstream
 `PRIVACY.md`.

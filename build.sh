@@ -12,7 +12,7 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
-APP_NAME="PolyArc"
+APP_NAME="PolyArc.AI"
 PROJ="PolyArc-Xcode/$APP_NAME/$APP_NAME.xcodeproj"
 PLATFORM="${1:-macos}"; shift || true
 
@@ -35,7 +35,7 @@ case "$PLATFORM" in
     echo
     echo "Built. App: build/Build/Products/Debug/$APP_NAME.app"
     echo "Run it once (registers the extension), then enable in:"
-    echo "  Safari > Settings > Extensions > PolyArc"
+    echo "  Safari > Settings > Extensions > PolyArc.AI"
     echo "  (dev builds: Safari > Settings > Advanced > 'Show features for web developers',"
     echo "   then Develop > Allow Unsigned Extensions — resets each Safari launch)"
     ;;
@@ -53,7 +53,7 @@ case "$PLATFORM" in
     echo
     echo "Built for iOS Simulator: build/Build/Products/Debug-iphonesimulator/$APP_NAME.app"
     echo "Install & run it in a booted Simulator, then enable the extension in:"
-    echo "  iOS Settings > Apps > Safari > Extensions > PolyArc  (and allow polymarket.com)"
+    echo "  iOS Settings > Apps > Safari > Extensions > PolyArc.AI  (and allow polymarket.com)"
     echo "For a physical device you must sign with your Apple ID Team (open in Xcode and Run)."
     ;;
   *)

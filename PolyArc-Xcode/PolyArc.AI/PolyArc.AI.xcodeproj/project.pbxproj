@@ -1,0 +1,999 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCD430E62FE9A696001F03C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD430E52FE9A696001F03C4 /* AppDelegate.swift */; };
+		BCD430E82FE9A696001F03C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD430E72FE9A696001F03C4 /* SceneDelegate.swift */; };
+		BCD430EB2FE9A696001F03C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD430E92FE9A696001F03C4 /* LaunchScreen.storyboard */; };
+		BCD430EE2FE9A696001F03C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD430EC2FE9A696001F03C4 /* Main.storyboard */; };
+		BCD430F72FE9A696001F03C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD430F62FE9A696001F03C4 /* AppDelegate.swift */; };
+		BCD430FA2FE9A696001F03C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD430F82FE9A696001F03C4 /* Main.storyboard */; };
+		BCD431012FE9A696001F03C4 /* PolyArc.AI Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BCD431002FE9A696001F03C4 /* PolyArc.AI Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BCD4310B2FE9A696001F03C4 /* PolyArc.AI Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BCD4310A2FE9A696001F03C4 /* PolyArc.AI Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BCD431102FE9A696001F03C4 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = BCD430D52FE9A695001F03C4 /* Main.html */; };
+		BCD431112FE9A696001F03C4 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = BCD430D52FE9A695001F03C4 /* Main.html */; };
+		BCD431122FE9A696001F03C4 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BCD430D72FE9A695001F03C4 /* Icon.png */; };
+		BCD431132FE9A696001F03C4 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BCD430D72FE9A695001F03C4 /* Icon.png */; };
+		BCD431142FE9A696001F03C4 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = BCD430D82FE9A695001F03C4 /* Style.css */; };
+		BCD431152FE9A696001F03C4 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = BCD430D82FE9A695001F03C4 /* Style.css */; };
+		BCD431162FE9A696001F03C4 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = BCD430D92FE9A695001F03C4 /* Script.js */; };
+		BCD431172FE9A696001F03C4 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = BCD430D92FE9A695001F03C4 /* Script.js */; };
+		BCD431182FE9A696001F03C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD430DA2FE9A695001F03C4 /* ViewController.swift */; };
+		BCD431192FE9A696001F03C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD430DA2FE9A695001F03C4 /* ViewController.swift */; };
+		BCD4311A2FE9A696001F03C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCD430DB2FE9A696001F03C4 /* Assets.xcassets */; };
+		BCD4311B2FE9A696001F03C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCD430DB2FE9A696001F03C4 /* Assets.xcassets */; };
+		BCD4311C2FE9A696001F03C4 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD430DD2FE9A696001F03C4 /* SafariWebExtensionHandler.swift */; };
+		BCD4311D2FE9A696001F03C4 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD430DD2FE9A696001F03C4 /* SafariWebExtensionHandler.swift */; };
+		BCD431362FE9A696001F03C4 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = BCD4312F2FE9A696001F03C4 /* popup.js */; };
+		BCD431372FE9A696001F03C4 /* card.css in Resources */ = {isa = PBXBuildFile; fileRef = BCD431302FE9A696001F03C4 /* card.css */; };
+		BCD431382FE9A696001F03C4 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = BCD431312FE9A696001F03C4 /* popup.html */; };
+		BCD431392FE9A696001F03C4 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = BCD431322FE9A696001F03C4 /* icons */; };
+		BCD4313A2FE9A696001F03C4 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = BCD431332FE9A696001F03C4 /* manifest.json */; };
+		BCD4313B2FE9A696001F03C4 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = BCD431342FE9A696001F03C4 /* content.js */; };
+		BCD4313C2FE9A696001F03C4 /* manifest.dev.json in Resources */ = {isa = PBXBuildFile; fileRef = BCD431352FE9A696001F03C4 /* manifest.dev.json */; };
+		BCD4313D2FE9A696001F03C4 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = BCD4312F2FE9A696001F03C4 /* popup.js */; };
+		BCD4313E2FE9A696001F03C4 /* card.css in Resources */ = {isa = PBXBuildFile; fileRef = BCD431302FE9A696001F03C4 /* card.css */; };
+		BCD4313F2FE9A696001F03C4 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = BCD431312FE9A696001F03C4 /* popup.html */; };
+		BCD431402FE9A696001F03C4 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = BCD431322FE9A696001F03C4 /* icons */; };
+		BCD431412FE9A696001F03C4 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = BCD431332FE9A696001F03C4 /* manifest.json */; };
+		BCD431422FE9A696001F03C4 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = BCD431342FE9A696001F03C4 /* content.js */; };
+		BCD431432FE9A696001F03C4 /* manifest.dev.json in Resources */ = {isa = PBXBuildFile; fileRef = BCD431352FE9A696001F03C4 /* manifest.dev.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCD431022FE9A696001F03C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCD430CF2FE9A695001F03C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCD430FF2FE9A696001F03C4;
+			remoteInfo = "PolyArc.AI Extension (iOS)";
+		};
+		BCD4310C2FE9A696001F03C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCD430CF2FE9A695001F03C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCD431092FE9A696001F03C4;
+			remoteInfo = "PolyArc.AI Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BCD431232FE9A696001F03C4 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BCD431012FE9A696001F03C4 /* PolyArc.AI Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD4312A2FE9A696001F03C4 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BCD4310B2FE9A696001F03C4 /* PolyArc.AI Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BCD430D62FE9A695001F03C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		BCD430D72FE9A695001F03C4 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		BCD430D82FE9A695001F03C4 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		BCD430D92FE9A695001F03C4 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		BCD430DA2FE9A695001F03C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BCD430DB2FE9A696001F03C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCD430DD2FE9A696001F03C4 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		BCD430E22FE9A696001F03C4 /* PolyArc.AI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PolyArc.AI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCD430E52FE9A696001F03C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BCD430E72FE9A696001F03C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BCD430EA2FE9A696001F03C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BCD430ED2FE9A696001F03C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCD430EF2FE9A696001F03C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCD430F42FE9A696001F03C4 /* PolyArc.AI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PolyArc.AI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCD430F62FE9A696001F03C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BCD430F92FE9A696001F03C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCD430FB2FE9A696001F03C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCD431002FE9A696001F03C4 /* PolyArc.AI Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PolyArc.AI Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCD431052FE9A696001F03C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCD4310A2FE9A696001F03C4 /* PolyArc.AI Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PolyArc.AI Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCD4310F2FE9A696001F03C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCD4312F2FE9A696001F03C4 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = popup.js; path = Resources/popup.js; sourceTree = "<group>"; };
+		BCD431302FE9A696001F03C4 /* card.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = card.css; path = Resources/card.css; sourceTree = "<group>"; };
+		BCD431312FE9A696001F03C4 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = Resources/popup.html; sourceTree = "<group>"; };
+		BCD431322FE9A696001F03C4 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = Resources/icons; sourceTree = "<group>"; };
+		BCD431332FE9A696001F03C4 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = Resources/manifest.json; sourceTree = "<group>"; };
+		BCD431342FE9A696001F03C4 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = Resources/content.js; sourceTree = "<group>"; };
+		BCD431352FE9A696001F03C4 /* manifest.dev.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.dev.json; path = Resources/manifest.dev.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCD430DF2FE9A696001F03C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD430F12FE9A696001F03C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD430FD2FE9A696001F03C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD431072FE9A696001F03C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCD430CE2FE9A695001F03C4 = {
+			isa = PBXGroup;
+			children = (
+				BCD430D32FE9A695001F03C4 /* Shared (App) */,
+				BCD430DC2FE9A696001F03C4 /* Shared (Extension) */,
+				BCD430E42FE9A696001F03C4 /* iOS (App) */,
+				BCD430F52FE9A696001F03C4 /* macOS (App) */,
+				BCD431042FE9A696001F03C4 /* iOS (Extension) */,
+				BCD4310E2FE9A696001F03C4 /* macOS (Extension) */,
+				BCD430E32FE9A696001F03C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BCD430D32FE9A695001F03C4 /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				BCD430DA2FE9A695001F03C4 /* ViewController.swift */,
+				BCD430DB2FE9A696001F03C4 /* Assets.xcassets */,
+				BCD430D42FE9A695001F03C4 /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		BCD430D42FE9A695001F03C4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BCD430D52FE9A695001F03C4 /* Main.html */,
+				BCD430D72FE9A695001F03C4 /* Icon.png */,
+				BCD430D82FE9A695001F03C4 /* Style.css */,
+				BCD430D92FE9A695001F03C4 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BCD430DC2FE9A696001F03C4 /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				BCD4312E2FE9A696001F03C4 /* Resources */,
+				BCD430DD2FE9A696001F03C4 /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		BCD430E32FE9A696001F03C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCD430E22FE9A696001F03C4 /* PolyArc.AI.app */,
+				BCD430F42FE9A696001F03C4 /* PolyArc.AI.app */,
+				BCD431002FE9A696001F03C4 /* PolyArc.AI Extension.appex */,
+				BCD4310A2FE9A696001F03C4 /* PolyArc.AI Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCD430E42FE9A696001F03C4 /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				BCD430E52FE9A696001F03C4 /* AppDelegate.swift */,
+				BCD430E72FE9A696001F03C4 /* SceneDelegate.swift */,
+				BCD430E92FE9A696001F03C4 /* LaunchScreen.storyboard */,
+				BCD430EC2FE9A696001F03C4 /* Main.storyboard */,
+				BCD430EF2FE9A696001F03C4 /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		BCD430F52FE9A696001F03C4 /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				BCD430F62FE9A696001F03C4 /* AppDelegate.swift */,
+				BCD430F82FE9A696001F03C4 /* Main.storyboard */,
+				BCD430FB2FE9A696001F03C4 /* Info.plist */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		BCD431042FE9A696001F03C4 /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				BCD431052FE9A696001F03C4 /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		BCD4310E2FE9A696001F03C4 /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				BCD4310F2FE9A696001F03C4 /* Info.plist */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		BCD4312E2FE9A696001F03C4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BCD4312F2FE9A696001F03C4 /* popup.js */,
+				BCD431302FE9A696001F03C4 /* card.css */,
+				BCD431312FE9A696001F03C4 /* popup.html */,
+				BCD431322FE9A696001F03C4 /* icons */,
+				BCD431332FE9A696001F03C4 /* manifest.json */,
+				BCD431342FE9A696001F03C4 /* content.js */,
+				BCD431352FE9A696001F03C4 /* manifest.dev.json */,
+			);
+			name = Resources;
+			path = "Shared (Extension)";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCD430E12FE9A696001F03C4 /* PolyArc.AI (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCD431242FE9A696001F03C4 /* Build configuration list for PBXNativeTarget "PolyArc.AI (iOS)" */;
+			buildPhases = (
+				BCD430DE2FE9A696001F03C4 /* Sources */,
+				BCD430DF2FE9A696001F03C4 /* Frameworks */,
+				BCD430E02FE9A696001F03C4 /* Resources */,
+				BCD431232FE9A696001F03C4 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCD431032FE9A696001F03C4 /* PBXTargetDependency */,
+			);
+			name = "PolyArc.AI (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "PolyArc.AI (iOS)";
+			productReference = BCD430E22FE9A696001F03C4 /* PolyArc.AI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCD430F32FE9A696001F03C4 /* PolyArc.AI (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCD4312B2FE9A696001F03C4 /* Build configuration list for PBXNativeTarget "PolyArc.AI (macOS)" */;
+			buildPhases = (
+				BCD430F02FE9A696001F03C4 /* Sources */,
+				BCD430F12FE9A696001F03C4 /* Frameworks */,
+				BCD430F22FE9A696001F03C4 /* Resources */,
+				BCD4312A2FE9A696001F03C4 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCD4310D2FE9A696001F03C4 /* PBXTargetDependency */,
+			);
+			name = "PolyArc.AI (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "PolyArc.AI (macOS)";
+			productReference = BCD430F42FE9A696001F03C4 /* PolyArc.AI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCD430FF2FE9A696001F03C4 /* PolyArc.AI Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCD431202FE9A696001F03C4 /* Build configuration list for PBXNativeTarget "PolyArc.AI Extension (iOS)" */;
+			buildPhases = (
+				BCD430FC2FE9A696001F03C4 /* Sources */,
+				BCD430FD2FE9A696001F03C4 /* Frameworks */,
+				BCD430FE2FE9A696001F03C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PolyArc.AI Extension (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "PolyArc.AI Extension (iOS)";
+			productReference = BCD431002FE9A696001F03C4 /* PolyArc.AI Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		BCD431092FE9A696001F03C4 /* PolyArc.AI Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCD431272FE9A696001F03C4 /* Build configuration list for PBXNativeTarget "PolyArc.AI Extension (macOS)" */;
+			buildPhases = (
+				BCD431062FE9A696001F03C4 /* Sources */,
+				BCD431072FE9A696001F03C4 /* Frameworks */,
+				BCD431082FE9A696001F03C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PolyArc.AI Extension (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "PolyArc.AI Extension (macOS)";
+			productReference = BCD4310A2FE9A696001F03C4 /* PolyArc.AI Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCD430CF2FE9A695001F03C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2650;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					BCD430E12FE9A696001F03C4 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					BCD430F32FE9A696001F03C4 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					BCD430FF2FE9A696001F03C4 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					BCD431092FE9A696001F03C4 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+				};
+			};
+			buildConfigurationList = BCD430D22FE9A695001F03C4 /* Build configuration list for PBXProject "PolyArc.AI" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCD430CE2FE9A695001F03C4;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BCD430E32FE9A696001F03C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCD430E12FE9A696001F03C4 /* PolyArc.AI (iOS) */,
+				BCD430F32FE9A696001F03C4 /* PolyArc.AI (macOS) */,
+				BCD430FF2FE9A696001F03C4 /* PolyArc.AI Extension (iOS) */,
+				BCD431092FE9A696001F03C4 /* PolyArc.AI Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCD430E02FE9A696001F03C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD431122FE9A696001F03C4 /* Icon.png in Resources */,
+				BCD430EB2FE9A696001F03C4 /* LaunchScreen.storyboard in Resources */,
+				BCD431102FE9A696001F03C4 /* Main.html in Resources */,
+				BCD431162FE9A696001F03C4 /* Script.js in Resources */,
+				BCD4311A2FE9A696001F03C4 /* Assets.xcassets in Resources */,
+				BCD430EE2FE9A696001F03C4 /* Main.storyboard in Resources */,
+				BCD431142FE9A696001F03C4 /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD430F22FE9A696001F03C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD431132FE9A696001F03C4 /* Icon.png in Resources */,
+				BCD431152FE9A696001F03C4 /* Style.css in Resources */,
+				BCD430FA2FE9A696001F03C4 /* Main.storyboard in Resources */,
+				BCD431172FE9A696001F03C4 /* Script.js in Resources */,
+				BCD4311B2FE9A696001F03C4 /* Assets.xcassets in Resources */,
+				BCD431112FE9A696001F03C4 /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD430FE2FE9A696001F03C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD431422FE9A696001F03C4 /* content.js in Resources */,
+				BCD4313D2FE9A696001F03C4 /* popup.js in Resources */,
+				BCD431432FE9A696001F03C4 /* manifest.dev.json in Resources */,
+				BCD431402FE9A696001F03C4 /* icons in Resources */,
+				BCD431412FE9A696001F03C4 /* manifest.json in Resources */,
+				BCD4313F2FE9A696001F03C4 /* popup.html in Resources */,
+				BCD4313E2FE9A696001F03C4 /* card.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD431082FE9A696001F03C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD4313B2FE9A696001F03C4 /* content.js in Resources */,
+				BCD431362FE9A696001F03C4 /* popup.js in Resources */,
+				BCD4313C2FE9A696001F03C4 /* manifest.dev.json in Resources */,
+				BCD431392FE9A696001F03C4 /* icons in Resources */,
+				BCD4313A2FE9A696001F03C4 /* manifest.json in Resources */,
+				BCD431382FE9A696001F03C4 /* popup.html in Resources */,
+				BCD431372FE9A696001F03C4 /* card.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCD430DE2FE9A696001F03C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD431182FE9A696001F03C4 /* ViewController.swift in Sources */,
+				BCD430E62FE9A696001F03C4 /* AppDelegate.swift in Sources */,
+				BCD430E82FE9A696001F03C4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD430F02FE9A696001F03C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD431192FE9A696001F03C4 /* ViewController.swift in Sources */,
+				BCD430F72FE9A696001F03C4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD430FC2FE9A696001F03C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD4311C2FE9A696001F03C4 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD431062FE9A696001F03C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD4311D2FE9A696001F03C4 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCD431032FE9A696001F03C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCD430FF2FE9A696001F03C4 /* PolyArc.AI Extension (iOS) */;
+			targetProxy = BCD431022FE9A696001F03C4 /* PBXContainerItemProxy */;
+		};
+		BCD4310D2FE9A696001F03C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCD431092FE9A696001F03C4 /* PolyArc.AI Extension (macOS) */;
+			targetProxy = BCD4310C2FE9A696001F03C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BCD430D52FE9A695001F03C4 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCD430D62FE9A695001F03C4 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		BCD430E92FE9A696001F03C4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCD430EA2FE9A696001F03C4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BCD430EC2FE9A696001F03C4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCD430ED2FE9A696001F03C4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCD430F82FE9A696001F03C4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCD430F92FE9A696001F03C4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCD4311E2FE9A696001F03C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BCD4311F2FE9A696001F03C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		BCD431212FE9A696001F03C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "PolyArc.AI Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.polyarc.safari.Extension;
+				PRODUCT_NAME = "PolyArc.AI Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCD431222FE9A696001F03C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "PolyArc.AI Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.polyarc.safari.Extension;
+				PRODUCT_NAME = "PolyArc.AI Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCD431252FE9A696001F03C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = PolyArc.AI;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.polyarc.safari;
+				PRODUCT_NAME = PolyArc.AI;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCD431262FE9A696001F03C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = PolyArc.AI;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.polyarc.safari;
+				PRODUCT_NAME = PolyArc.AI;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCD431282FE9A696001F03C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "PolyArc.AI Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.polyarc.safari.Extension;
+				PRODUCT_NAME = "PolyArc.AI Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BCD431292FE9A696001F03C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "PolyArc.AI Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.polyarc.safari.Extension;
+				PRODUCT_NAME = "PolyArc.AI Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BCD4312C2FE9A696001F03C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = PolyArc.AI;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.polyarc.safari;
+				PRODUCT_NAME = PolyArc.AI;
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BCD4312D2FE9A696001F03C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = PolyArc.AI;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.polyarc.safari;
+				PRODUCT_NAME = PolyArc.AI;
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCD430D22FE9A695001F03C4 /* Build configuration list for PBXProject "PolyArc.AI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCD4311E2FE9A696001F03C4 /* Debug */,
+				BCD4311F2FE9A696001F03C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCD431202FE9A696001F03C4 /* Build configuration list for PBXNativeTarget "PolyArc.AI Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCD431212FE9A696001F03C4 /* Debug */,
+				BCD431222FE9A696001F03C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCD431242FE9A696001F03C4 /* Build configuration list for PBXNativeTarget "PolyArc.AI (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCD431252FE9A696001F03C4 /* Debug */,
+				BCD431262FE9A696001F03C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCD431272FE9A696001F03C4 /* Build configuration list for PBXNativeTarget "PolyArc.AI Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCD431282FE9A696001F03C4 /* Debug */,
+				BCD431292FE9A696001F03C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCD4312B2FE9A696001F03C4 /* Build configuration list for PBXNativeTarget "PolyArc.AI (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCD4312C2FE9A696001F03C4 /* Debug */,
+				BCD4312D2FE9A696001F03C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCD430CF2FE9A695001F03C4 /* Project object */;
+}

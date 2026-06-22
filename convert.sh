@@ -13,7 +13,7 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
-APP_NAME="PolyArc"
+APP_NAME="PolyArc.AI"
 BUNDLE_ID="ai.polyarc.safari"
 EXT_DIR="extension"
 OUT_DIR="PolyArc-Xcode"
