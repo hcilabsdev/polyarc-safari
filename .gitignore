@@ -1,4 +1,6 @@
-PolyArc-Xcode/
 build/
 .DS_Store
 *.zip
+# Xcode user state (keep the project, drop per-user cruft)
+**/xcuserdata/
+**/*.xcuserstate
