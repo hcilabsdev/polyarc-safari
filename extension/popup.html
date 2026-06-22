@@ -1,0 +1,23 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+  body { width: 280px; font: 13px/1.5 -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: #0c0f14; color: #d7dce3; margin: 0; padding: 16px; }
+  h1 { font-size: 16px; margin: 0 0 4px; color: #fff; }
+  p { color: #8aa0b3; margin: 0 0 12px; font-size: 12px; }
+  label { font-size: 11px; color: #7e8a99; text-transform: uppercase; letter-spacing: .5px; }
+  input { width: 100%; box-sizing: border-box; margin: 4px 0 10px; padding: 7px 9px;
+    background: #141923; border: 1px solid #2a3340; border-radius: 7px; color: #d7dce3; }
+  button { width: 100%; padding: 8px; background: #1f5138; color: #7fcfa5; border: 1px solid #2a6b48;
+    border-radius: 7px; cursor: pointer; font-weight: 600; }
+  .ok { color: #5fd39a; font-size: 11px; margin-top: 8px; height: 12px; }
+  .fine { color: #6b7785; font-size: 10.5px; margin-top: 12px; }
+</style></head><body>
+  <h1>PolyArc</h1>
+  <p>Open a Polymarket market — the honest card appears bottom-right. Facts, not advice.</p>
+  <label>Backend API URL</label>
+  <input id="api" placeholder="http://localhost:8088">
+  <button id="save">Save</button>
+  <div class="ok" id="ok"></div>
+  <div class="fine">Free. We log <b>anonymized</b> usage — which markets are viewed, when, and the price at view, under a random per-install id — to measure whether the tool helps and to study aggregate market attention. <b>No identity, no wallet, no bets, and your data is never sold.</b> We never call anyone a scammer, and never tell you what or how much to bet.</div>
+  <script src="popup.js"></script>
+</body></html>

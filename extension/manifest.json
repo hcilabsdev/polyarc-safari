@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "PolyArc — know before you bet",
+  "version": "0.1.0",
+  "description": "Honest, free decision-support for prediction markets. Flags traps (SafeBet) and shows fee-adjusted base rates (PolyTruth). Facts, not advice — no tips, no 'safe bet' promises.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://polyarc.ai/*",
+    "https://www.polyarc.ai/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://polymarket.com/*", "https://*.polymarket.com/*"],
+      "js": ["content.js"],
+      "css": ["card.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "PolyArc",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
+}
